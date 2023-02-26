@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Minitest week 1 </title>
+</head>
+<body>
+<h1> <label for="input">Bài 3 - Ấn Up giá trị tăng 2, ấn Down giá trị giảm 2 </label></h1>
+<input type="number" inputmode="nummeric" step="2" id="input" value="0">
+<button type="button" id="up"> Up </button>
+<button type="button" id="down"> Down </button>
+</body>
+<script>
+  function up(){
+    let a;
+    a = document.getElementById("input").valueAsNumber;
+    document.getElementById("input").valueAsNumber = a + 2
+  }
+  function down(){
+    let b;
+    b= document.getElementById("input").valueAsNumber;
+    document.getElementById("input").valueAsNumber = b - 2
+  }
+  document.getElementById("up").addEventListener("click",up);
+  document.getElementById("down").addEventListener("click",down);
+</script>
+</html>
